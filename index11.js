@@ -7,6 +7,10 @@ function createTask() {
     NewPoint.textContent = taskText;
     list.append(NewPoint);
     taskInput.value = '';
+    if (taskText === '') {
+        alert('Введите задачу!');
+    }
+
 }
 
 const tasklist = document.querySelector('ol');
@@ -15,6 +19,15 @@ tasklist.addEventListener('click', function (evt) {
         evt.target.classList.toggle('point');
     }
 });
+
+
+
+
+
+
+
+
+
 
 
 
